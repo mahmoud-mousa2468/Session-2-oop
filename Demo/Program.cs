@@ -54,13 +54,31 @@ namespace Demo
             // 2 - Polymorphism Methods(Functions) Overriding
             //there are more than one function [in diff class] these have the same name and 
             //the same signature but with diff behaviour
-            TypeB typeB = new TypeB() { A = 1, B = 2 };
+            //TypeB typeB = new TypeB() { A = 1, B = 2 };
             //typeB.A = 1;
             //typeB.B = 2;
-            typeB.Fun01();
-            typeB.Fun02();
+            //typeB.Fun01();
+            //typeB.Fun02();
 
             #endregion
+            #endregion
+            #region Binding
+            //what is binding?
+            //referenceFrom Parent---> Object child
+
+            //TypeA Ref;
+            //Ref = new TypeA();
+            //Ref = new TypeB();
+            // cause child is a parent
+            // TypeB is a TypeA
+            //Ref = new TypeB();
+
+            //Ref.A = 12;
+            //Ref.B = 13; // will give u error cause this reference will access the part of
+            // class TypeA from Class TypeB
+
+            //Ref.Fun01(); //static binding
+            //Ref.Fun02();
             #endregion
         }
     }
