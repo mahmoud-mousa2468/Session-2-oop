@@ -1,9 +1,27 @@
 ﻿using Demo.Inheritance;
+using Demo.overriding;
 
 namespace Demo
 {
     internal class Program
     {
+        static int Sum(int X,int Y)
+        {
+            return X + Y;
+        }
+        static double Sum(double X,double Y)
+        {
+            return X + Y;
+        }static double Sum(double X,int Y)
+        {
+            return X + Y;
+        }static double Sum(int X,double Y)
+        {
+            return X + Y;
+        }static int Sum(int X,int Y,int Z)
+        {
+            return X + Y+Z;
+        }
         static void Main(string[] args)
         {
             #region Inheritance
@@ -15,6 +33,34 @@ namespace Demo
             //Child child = new Child(1, 2, 3);
             //child.Fun01();
             //child.Fun02();
+            #endregion
+            #region Polymorphism
+            //Polymorphism
+            // 1 - Polymorphism Methods(Functions) Overloading
+            // 2 - Polymorphism Methods(Functions) Overriding
+
+            #region Overloading
+            // 1- Polymorphism Methods (Functions) Overloading
+            // there are more than one fun (in the same scope[class-struct])
+            // these have the same name but with diff signature
+            // (count-type-order) parameters
+            //Sum(1, 2);
+            //Sum(1.4, 4);
+            //Sum(3, 4.5);
+            //Sum(1, 5, 8);
+            #endregion
+
+            #region Overriding
+            // 2 - Polymorphism Methods(Functions) Overriding
+            //there are more than one function [in diff class] these have the same name and 
+            //the same signature but with diff behaviour
+            TypeB typeB = new TypeB() { A = 1, B = 2 };
+            //typeB.A = 1;
+            //typeB.B = 2;
+            typeB.Fun01();
+            typeB.Fun02();
+
+            #endregion
             #endregion
         }
     }
