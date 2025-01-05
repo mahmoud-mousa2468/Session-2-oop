@@ -34,6 +34,27 @@ namespace Demo
             //child.Fun01();
             //child.Fun02();
             #endregion
+            #region Relation Btw Class
+            // Relation Btw Classes
+            // 1- Inheritance : is a Relationship
+            // FullTimeEmployee ---> Employee
+            // FullTimeEmployee is a Employee
+            // child ----> Parent
+            // child is a Parent
+
+
+            //Child child = new Child(1, 2, 3);
+
+            // 2.Association: has a Relationship
+            // Book has a Author
+            // Library has a Book
+
+            // 2-1 Composition : has a Relationship
+            // 2-2 Aggregation : has a Relationship
+
+            Author author = new Author();
+            Book book = new Book(author);
+            #endregion
             #region Polymorphism
             //Polymorphism
             // 1 - Polymorphism Methods(Functions) Overloading
