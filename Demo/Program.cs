@@ -1,26 +1,26 @@
-﻿using Demo.Inheritance;
-using Demo.overriding;
-
-namespace Demo
+﻿namespace Demo
 {
     internal class Program
     {
-        static int Sum(int X,int Y)
+        static int Sum(int X, int Y)
         {
             return X + Y;
         }
-        static double Sum(double X,double Y)
+        static double Sum(double X, double Y)
         {
             return X + Y;
-        }static double Sum(double X,int Y)
+        }
+        static double Sum(double X, int Y)
         {
             return X + Y;
-        }static double Sum(int X,double Y)
+        }
+        static double Sum(int X, double Y)
         {
             return X + Y;
-        }static int Sum(int X,int Y,int Z)
+        }
+        static int Sum(int X, int Y, int Z)
         {
-            return X + Y+Z;
+            return X + Y + Z;
         }
         static void Main(string[] args)
         {
@@ -37,9 +37,9 @@ namespace Demo
             #region Relation Btw Class
             // Relation Btw Classes
             // 1- Inheritance : is a Relationship
-            // FullTimeEmployee ---> Employee
+            //FullTimeEmployee--->Employee
             // FullTimeEmployee is a Employee
-            // child ----> Parent
+            // child---- > Parent
             // child is a Parent
 
 
@@ -100,6 +100,26 @@ namespace Demo
 
             //Ref.Fun01(); //static binding
             //Ref.Fun02();
+            #endregion
+
+            #region BindingEx
+
+            //TypeA typeA;
+            //typeA = new TypeA();
+            //typeA = new TypeB(); // TypeA is a Parent Of TypeB
+            //typeA = new TypeD(); // TypeA is a Indirect Parent Of TypeC
+
+            //TypeA typeA = new TypeD();
+
+            //typeA.A = 12;
+            //typeA.B = 12; // error cause can't see B
+            //typeA.C = 12; // error cause can't see C
+            //typeA.D = 12; // error cause can't see D
+
+            //typeA.Fun01(); // static binding so run the fun01 of the parent (typeA)
+            //typeA.Fun02(); // dynamic binding so run the fun02 of the type object (typeD)
+            //               // but we change override keyword to new keyword so run the fun02 of the typeC
+
             #endregion
         }
     }
