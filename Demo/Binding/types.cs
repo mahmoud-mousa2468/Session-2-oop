@@ -2,7 +2,7 @@
 {
     class TypeA
     {
-        protected private int A { get; set; }
+        public int A { get; set; }
 
         public void Fun01()
         {
@@ -13,12 +13,6 @@
         {
             Console.WriteLine($"A : {A}");
         }
-    }
-    class test
-    {
-
-
-
     }
     class TypeB : TypeA
     {

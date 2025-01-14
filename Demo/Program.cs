@@ -105,7 +105,7 @@
             //TypeA typeA;
             //typeA = new TypeA();
             //typeA = new TypeB(); // TypeA is a Parent Of TypeB
-            //typeA = new TypeD(); // TypeA is a Indirect Parent Of TypeC
+            //typeA = new TypeD(); // TypeA is a Indirect Parent Of TypeD
 
             //TypeA typeA = new TypeD();
 
