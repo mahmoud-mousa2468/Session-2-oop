@@ -70,7 +70,6 @@
             //Sum(3, 4.5);
             //Sum(1, 5, 8);
             #endregion
-
             #region Overriding
             // 2 - Polymorphism Methods(Functions) Overriding
             //there are more than one function [in diff class] these have the same name and 
@@ -101,7 +100,6 @@
             //Ref.Fun01(); //static binding
             //Ref.Fun02();
             #endregion
-
             #region BindingEx
 
             //TypeA typeA;
@@ -119,6 +117,15 @@
             //typeA.Fun01(); // static binding so run the fun01 of the parent (typeA)
             //typeA.Fun02(); // dynamic binding so run the fun02 of the type object (typeD)
             //               // but we change override keyword to new keyword so run the fun02 of the typeC
+
+            #endregion
+            #region Task
+            //private Access is limited to the containing type.
+            //public Access is not restricted.
+            //internal Access is limited to the current assembly.
+            //protected The code is accessible within the same class, or in a class that is inherited from that class.
+            //protected internal Access is limited to the current assembly or types derived from the containing class.
+            //private protected Access is limited to the containing class or types derived from the containing class within the current assembly.
 
             #endregion
         }
